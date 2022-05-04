@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sitenav {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    border: 1px solid black;
+    z-index: 90;
+}
+
+#sitenav * {
+    font-size: 20px;
+    display: inline-block;
+    padding: 25px 40px;
+    font-family: Tahoma, sans-serif;
+    color: black;
+}
+
+nav a:link { 
+    text-decoration: none; 
+}
+nav a:visited {
+    text-decoration: none; 
+}
+nav a:hover { 
+    text-decoration: underline; 
+}
+nav a:active { 
+    text-decoration: none; 
+}
+
+header {
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(-45deg, #001570, #0090c0);
+    color: white;
+    z-index: 100;
+    position: absolute;
+}
+
+#topnav {
+    width: 100%;
+    text-align: center;
+}
+
+#topnav * {
+    font-size: 20px;
+    display: inline-block;
+    padding: 25px 40px;
+    font-family: Tahoma, sans-serif;
+    color: white;
+    
+}
