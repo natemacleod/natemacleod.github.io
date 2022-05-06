@@ -3,35 +3,52 @@
     <head>
         <title>Nate MacLeod's Website</title>
         <link href="./style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script async src="./js/dropdown.js"></script>
     </head>
     <body>
-        <nav id="sitenav">
-            <a href="#">Top</a>
-            <a href="#about">About Me</a>
-            <a href="#projects">My Projects</a>
-            <a href="#contact">Contact</a>
-            <p>Selection menu</p>
-        </nav>
         <header>
             <!-- Header with name etc. -->
-            <nav id="topnav">
+            <nav>
                 <a href="#">Top</a>
                 <a href="#about">About Me</a>
                 <a href="#projects">My Projects</a>
                 <a href="#contact">Contact</a>
-                <p>Selection menu</p>
+                <div class="dropdown">
+                    <button id="topDropdown" class="dropbtn">More</button>
+                    <div id="topContent" class="dropdown-content">
+                      <a href="./files/resume.pdf" target="_blank">Resume (.pdf)</a>
+                      <a href="https://github.com/natemacleod" target="_blank">GitHub</a>
+                    </div>
+                  </div>
             </nav>
-            <h1> This site is under construction. Please come back later!</h1>
+            <h1> This site is under construction.</h1>
+            <h4>Please come back later!</h4>
         </header>
         <main>
             <div id="about">
                 <!-- A few sentences about me -->
+                <h2>About Me</h2>
+                <p>Text goes here</p>
             </div>
             <div id="projects">
                 <!-- Links to project pages (when I do them...) -->
+                <h2>My Projects</h2>
+                <div> 
+                    <h3>Name</h3> <h3>|</h3>
+                    <h5><a href="#projects">natemacleod.github.io/exampleURL</a></h5>
+                    <p>Description</p>
+                </div>
             </div>
             <div id="contact">
+                <h2>Contact Information</h2>
                 <!-- Email, phone, etc. -->
+                <img src="">
+                <p>nate.macleod@uwaterloo.ca</p>
+                <img src="">
+                <p>(226) 220-0101</p>
             </div>
         </main>
     </body>
