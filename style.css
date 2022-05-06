@@ -40,8 +40,12 @@ nav * {
 }
   
 .dropdown {
-    position: relative;
-    display: inline-block;
+    padding: 25px 0px;
+}
+
+.dropdown img {
+    padding: 0 0 0 5px;
+    filter: invert(100%);
 }
   
 .dropdown-content {
@@ -116,12 +120,16 @@ h4 {
     font-size: 25px;
 }
 
-h5 {
+#projects a {
     font-style: italic;
     font-size: 25px;
     font-weight: 100;
     display: inline-block;
     padding: 10px;
+}
+
+#projects img {
+    display: inline-block;
 }
 
 p {
