@@ -81,6 +81,11 @@ header {
     z-index: 100;
 }
 
+#snakenav {
+    background: linear-gradient(-45deg, #0033aa, #0090c0);
+    color: white;
+}
+
 main {
     background-color: #ddd;
 }
@@ -136,4 +141,8 @@ p {
     font-size: 20px;
     font-weight: 300;
     padding: 5px 10px 20px 10px;
+}
+
+#gamearea {
+    border: 2px solid red;
 }

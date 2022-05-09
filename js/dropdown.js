@@ -3,8 +3,8 @@
 function toggleMenu() {
     document.getElementById("topContent").classList.toggle("show");
     if (document.getElementById("topDChevron").src.includes("down")) {
-        document.getElementById("topDChevron").src ="./icons/chevron-up.svg";
-    } else document.getElementById("topDChevron").src ="./icons/chevron-down.svg";
+        document.getElementById("topDChevron").src = "./icons/chevron-up.svg";
+    } else document.getElementById("topDChevron").src = "./icons/chevron-down.svg";
 }
 
 window.onclick = function(event) {
