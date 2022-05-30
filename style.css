@@ -29,7 +29,7 @@ nav {
     width: 97%;
 }
 
-nav * {
+a {
     font-family: var(--heading-font);
     color: var(--c7);
     font-size: 18px;
@@ -40,14 +40,26 @@ nav * {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--c4);
+}
+
 header {
     height: 100vh;
     width: 100%;
     vertical-align: middle;
 }
 
-main {
+#aboutflex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+}
 
+#aboutflex * {
+    padding: 0 20px 0 20px;
 }
 
 #home {
@@ -66,11 +78,6 @@ nav a:hover {
     border: 2px solid var(--c4);
     border-radius: 20px;
     overflow: hidden;
-}
-
-.fproject {
-    width: 60%;
-    margin: auto;
 }
 
 h1 {
@@ -118,8 +125,14 @@ h6 {
     font-size: 25px;
 }
 
-.h3num {
-    font-size: 20px;
+.fproject {
+    border: 1px solid var(--c4);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: left;
+    padding: 10px 15px 20px 15px;
+    width: 40%;
+    margin: auto;
 }
 
 .projsubheading {
@@ -129,20 +142,51 @@ h6 {
 
 #projects a {
     font-style: italic;
-    font-size: 25px;
     font-weight: 100;
-    display: inline-block;
-    padding: 10px;
+    font-family: var(--heading-font);
+    padding: 0;
+    margin: 0 10px 10px 10px;
+    color: var(--c7);
+    font-size: 16px;
+    display: block;
 }
 
-#projects img {
+#prog {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    align-content: center;
+}
+
+#prog p {
+    font-size: 15px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#prog a {
+    margin: 0;
+    font-size: 0;
+}
+
+#prog img {
     display: inline-block;
+    filter: invert(100%);
 }
 
 p {
     font-size: 20px;
     font-weight: 300;
-    padding: 5px 10px 20px 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+#email * {
+    display: inline-block;
+}
+
+#email img {
+    filter: invert(100%);
+    margin: 0 0 0 10px;
 }
 
 #gamearea {
