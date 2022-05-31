@@ -1,6 +1,6 @@
 /* Snake game for natemacleod.github.io/snake
    Created by Nate MacLeod
-   v1.0 (2022/05/10)
+   v1.0.1 (2022/05/31)
 */
 
 /* BASIC FUNCTIONS */
@@ -166,31 +166,33 @@ function invalidMove() {
 
 // Starts the game on the first valid key press
 async function start(e) {
-    st.clear();
-    fillSnake();
-    updateScore();
-
     // Stops arrow keys and spacebar from scrolling the page
-    if(["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
+    if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
         e.preventDefault();
     }
 
-    // Keybinds
-    if (e.code === "ArrowUp" || e.code === "KeyW") st.dir = "UP";
-    else if (e.code === "ArrowDown" || e.code === "KeyS") st.dir = "DOWN";
-    else if (e.code === "ArrowLeft" || e.code === "KeyA") st.dir = "LEFT";
-    else if (e.code === "ArrowRight" || e.code === "KeyD") st.dir = "RIGHT";
-    document.removeEventListener("keydown", start);
+    if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "KeyW", "KeyS", "KeyA", "KeyD"].indexOf(e.code) > -1) {
+        st.clear();
+        fillSnake();
+        updateScore();
 
-    document.addEventListener("keydown", changeDirection);
-    await game();
-    startScreen("restart");
+        // Keybinds
+        if (e.code === "ArrowUp" || e.code === "KeyW") st.dir = "UP";
+        else if (e.code === "ArrowDown" || e.code === "KeyS") st.dir = "DOWN";
+        else if (e.code === "ArrowLeft" || e.code === "KeyA") st.dir = "LEFT";
+        else if (e.code === "ArrowRight" || e.code === "KeyD") st.dir = "RIGHT";
+        document.removeEventListener("keydown", start);
+
+        document.addEventListener("keydown", changeDirection);
+        await game();
+        startScreen("restart");
+    }
 }
 
 // Changes direction when keys are pressed. 
 function changeDirection(e) {
     // Stops arrow keys and spacebar from scrolling the page
-    if(["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
+    if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
         e.preventDefault();
     }
 
@@ -215,8 +217,14 @@ async function startScreen(str) {
 
 // Main game loop
 async function game() {
+    firstTurn = true;
     while (st.active) {
+        if (!firstTurn) await sleep(100);
+
         move();
+
+        if (firstTurn) firstTurn = false;
+
         if (invalidMove()) {
             st.active = false;
             break;
@@ -229,7 +237,6 @@ async function game() {
         fillApple();
 
         if (st.snake[0].x === st.apple.x && st.snake[0].y === st.apple.y) await grow();
-        else await sleep(100);
     }
 }
 
