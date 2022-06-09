@@ -1,11 +1,11 @@
 :root {
-    --c1: #252627;
+    --c1: #1f1f1f;
     --c2: #16262e;
     --c3: #4d6cfa;
     --c4: #10afaf;
     --c5: #ec4e20;
     --c6: #829191;
-    --c7: white;
+    --c7: #efefef;
 
     --heading-font: 'IBM Plex Mono', sans-serif;
     --text-font: 'Segoe UI', Helvetica, sans-serif;
@@ -14,19 +14,20 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
     font-family: 'Segoe UI', Helvetica, sans-serif;
     text-align: center;
-    background-color: var(--c2); 
-    color: var(--c7);
+    background-color: var(--c7); 
+    color: var(--c1);
 }
 
 nav {
     text-align: right;
-    width: 97%;
+    width: 100%;
+    background-color: var(--c1);
+    color: var(--c7);
 }
 
 a {
@@ -42,12 +43,22 @@ a {
 
 a:hover {
     color: var(--c4);
+    text-decoration: none;
 }
 
 header {
-    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    height: 95vh;
     width: 100%;
     vertical-align: middle;
+    background-color: var(--c1);
+    color: var(--c7);
+}
+
+#diag {
+    position: absolute;
+    bottom: -5vh;
 }
 
 #aboutflex {
@@ -65,6 +76,10 @@ header {
 #home {
     float: left;
     margin: 20px 10px 20px 3%;
+}
+
+main {
+    margin-top: 8vh;
 }
 
 nav a:hover {
@@ -119,10 +134,6 @@ h6 {
     font-family: var(--heading-font);
     display: inline-block;
     color: var(--c4);
-}
-
-.h2num {
-    font-size: 25px;
 }
 
 .fproject {
@@ -192,4 +203,23 @@ p {
 #gamearea {
     border: 2px solid red;
     margin: 20px 0 60px 0;
+}
+
+#sidebar {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+
+#sidebar a {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+#sidebar img {
+    box-sizing: content-box;
+    padding: 20px;
 }
