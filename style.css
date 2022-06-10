@@ -30,6 +30,10 @@ nav {
     color: var(--c7);
 }
 
+nav a:hover {
+    color: white;
+}
+
 a {
     font-family: var(--heading-font);
     color: var(--c7);
@@ -38,11 +42,6 @@ a {
     padding: 10px 15px;
     border-radius: 15px;
     margin: 20px 10px;
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--c4);
     text-decoration: none;
 }
 
@@ -67,6 +66,8 @@ header {
     align-items: center;
     margin: 0 20px 20px 20px;
     padding: 10px;
+    width: 60%;
+    margin: auto;
 }
 
 #aboutflex * {
@@ -80,19 +81,6 @@ header {
 
 main {
     margin-top: 8vh;
-}
-
-nav a:hover {
-    color: var(--c4);
-    text-decoration: underline;
-}
-
-#about {
-    width: 60%;
-    margin: auto;
-    border: 2px solid var(--c4);
-    border-radius: 20px;
-    overflow: hidden;
 }
 
 h1 {
@@ -136,53 +124,58 @@ h6 {
     color: var(--c4);
 }
 
-.fproject {
-    border: 1px solid var(--c4);
-    border-radius: 20px;
-    overflow: hidden;
+.proj {
+    display: flex;
+    margin: 40px auto;
+    min-width: 600px;
+    max-width: 900px;
+    height: 300px;
+}
+
+.project-left {
+    width: 49%;
+    margin: 0 1% 0 0;
+}
+
+.project-left img {
+    width: 300px;
+    height: 300px;
+}
+
+.project-right {
+    width: 49%;
+    margin: 0 0 0 1%;
     text-align: left;
-    padding: 10px 15px 20px 15px;
-    width: 40%;
-    margin: auto;
 }
 
-.projsubheading {
-    font-size: 30px;
-    font-weight: 500;
+.project-right * {
+    margin: 10px;
 }
 
-#projects a {
-    font-style: italic;
-    font-weight: 100;
-    font-family: var(--heading-font);
-    padding: 0;
-    margin: 0 10px 10px 10px;
-    color: var(--c7);
-    font-size: 16px;
+.project-right h3 {
+    padding: 10px 10px 0 10px;
+    margin: 25px 10px 0 10px;
+}
+
+.project-right a {
+    padding: 0 0 10px 10px;
+    color: var(--c1);
+    font-size: 14px;
+    margin: 0 0 10px 10px;
     display: block;
 }
 
-#prog {
+.stack {
     display: flex;
-    align-items: center;
-    justify-content: right;
-    align-content: center;
+    align-items: baseline;
+    margin-left: 20px;
 }
 
-#prog p {
-    font-size: 15px;
-    font-weight: 100;
-    font-style: italic;
-}
-
-#prog a {
+.stack * {
     margin: 0;
-    font-size: 0;
-}
-
-#prog img {
-    display: inline-block;
-    filter: invert(100%);
+    padding: 0;
+    font-style: italic;
+    font-size: 18px;
 }
 
 p {
@@ -222,4 +215,63 @@ p {
 #sidebar img {
     box-sizing: content-box;
     padding: 20px;
+}
+
+#skills {
+    display: flex;
+    flex-flow: row wrap;
+    width: 55%;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.skillShell {
+    width: 160px;
+    height: 160px;
+}
+
+.skill {
+    margin: 15px;
+    padding: 15px;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+}
+
+#methods {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.contactShell {
+    width: 300px;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+}
+
+.method {
+    padding: 0px;
+    color: var(--c1);
+}
+
+.method p {
+    padding: 0;
+}
+
+.method img {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 10px 0;
+}
+
+#resume {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
 }

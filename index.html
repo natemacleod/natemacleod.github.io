@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Nate MacLeod's Website</title>
+    <title>Nate MacLeod</title>
     <link href="./style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +19,21 @@
         <a href="./files/resume.pdf" target="_blank" style="margin-right: 3%">Resume</a>
     </nav>
     <header>
-        <!-- Header with name etc. -->
         <h1>Hi. <br>I'm Nate MacLeod.</h1>
         <h4 id="subtitle">I'm an aspiring developer looking for exciting opportunities in the CS industry. <br>
             This site is under construction. Please come back later!</h4>
         <div id="sidebar">
-            <a href="mailto:nate.macleod@uwaterloo.ca"><img src="./icons/envelope.svg" width="45px" height="45px" style="background-color: white;"></a>
-            <a href="#"><img src="./icons/linkedin.svg" width="45px" height="45px" style="background-color: dodgerblue;"></a>
-            <a href="https://github.com/natemacleod" target="_blank"><img src="./icons/github.svg" width="45px" height="45px" style="background-color: #e9d9d1; filter: invert(100%);"></a>
+            <a href="mailto:nate.macleod@uwaterloo.ca"><img src="./icons/envelope.svg" width="45px" height="45px"
+                    style="background-color: #efefef;"></a>
+            <a href="#"><img src="./icons/linkedin.svg" width="45px" height="45px"
+                    style="background-color: dodgerblue;"></a>
+            <a href="https://github.com/natemacleod" target="_blank"><img src="./icons/github.svg" width="45px"
+                    height="45px" style="background-color: #e9d9d1; filter: invert(100%);"></a>
         </div>
         <img id="diag" src="./files/diagonal.png" width="100%" height="50vh">
     </header>
     <main>
         <div id="about">
-            <!-- A few sentences about me -->
             <h2>About Me</h2>
             <div id="aboutflex">
                 <img src="./files/me.jpg">
@@ -43,39 +44,166 @@
                     [Add more]
                 </p>
             </div>
-        </div>
-        <div id="projects">
-            <!-- Links to project pages (when I do them...) -->
-            <h2>My Projects</h2>
-            <br>
-            <h2 class="projsubheading">Featured Projects</h2>
-            <div class="fproject">
-                <h3>Name</h3>
-                <a href="#projects">natemacleod.github.io/exampleURL</a>
-                <p>Description</p>
-                <div id="prog">
-                    <p id="langs">Languages</p>
-                    <a href="https://github.com/natemacleod" target="_blank"><img src="./icons/github.svg"></a>
+            <h2>My Skills</h2>
+            <div id="skills">
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/c.png" style="width: 53.44px">
+                        <p>C</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/cpp.png" style="width: 53.44px">
+                        <p>C++</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/py.png">
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/java.png">
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/html.png">
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/css.png" style="width: 42.53px;">
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/js.png">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/vue.png">
+                        <p>Vue.js</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/react.svg">
+                        <p>React</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/git.png">
+                        <p>Git</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/gh.png">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/fire.svg">
+                        <p>Firebase</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/bash.png">
+                        <p>Bash</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/linux.jpg">
+                        <p>Linux</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
+                        <img src="./files/skills/win.png">
+                        <p>Windows</p>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div id="projects">
+            <h2>My Projects</h2>
             <br>
-            <h2 class="projsubheading">More Projects</h2>
-            <div class="fproject">
-                <h3>Snake</h3>
-                <a href="./snake.html">natemacleod.github.io/snake.html</a>
-                <p>A simple game of snake.</p>
-                <div id="prog">
-                    <p id="langs">JavaScript</p>
-                    <a href="https://github.com/natemacleod/natemacleod.github.io/blob/main/js/snake.js" target="_blank"><img src="./icons/github.svg"></a>
+            <div class="proj">
+                <div class="project-left">
+                    <img src="./files/skills/bash.png">
+                </div>
+                <div class="project-right">
+                    <h3>Template</h3>
+                    <a href="#projects">natemacleod.github.io/exampleURL</a>
+                    <p>Description <br>
+                        Line 2 <br>
+                        Line 3
+                    </p>
+                    <div class="stack">
+                        <p>Languages</p>
+                        <a href="https://github.com/natemacleod" target="_blank"><img src="./icons/github.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="proj">
+                <div class="project-left">
+                    <img src="./files/skills/bash.png">
+                </div>
+                <div class="project-right">
+                    <h3>Snake</h3>
+                    <a href="./snake.html">natemacleod.github.io/snake.html</a>
+                    <p>A simple game of snake using JavaScript graphics and async programming techniques.
+                    </p>
+                    <div class="stack">
+                        <p>HTML, CSS, JavaScript</p>
+                        <a href="https://github.com/natemacleod/natemacleod.github.io/blob/main/js/snake.js" target="_blank"><img src="./icons/github.svg"></a>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="contact">
             <h2>Contact Me</h2>
-            <p>Feel free to send me an email! My inbox is always open, and I'll get back to you as soon as I can.</p>
-            <div id="email">
-                <img src="./icons/envelope.svg">
-                <a href="mailto:nate.macleod@uwaterloo.ca">nate.macleod@uwaterloo.ca</a>
+            <div id="methods">
+                <a class="contactShell" href="mailto:nate.macleod@uwaterloo.ca">
+                    <div class="method">
+                        <img src="./icons/envelope.svg">
+                        <p>nate.macleod@uwaterloo.ca</p>
+                    </div>
+                </a>
+                <a class="contactShell" href="#">
+                    <div class="method">
+                        <img src="./icons/linkedin.svg">
+                        <p>(LinkedIn ID)</p>
+                    </div>
+                </a>
+                <a class="contactShell" href="https://github.com/natemacleod" target="_blank">
+                    <div class="method">
+                        <img src="./icons/github.svg">
+                        <p>/natemacleod</p>
+                    </div>
+                </a>
+            </div>
+            <h2>Download My Resume</h2>
+            <div id="resume">
+                <a class="contactShell" href="./files/resume.pdf" target="_blank">
+                    <div class="method">
+                        <img src="./icons/pdf.svg">
+                        <p>PDF (XX.X MB)</p>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
