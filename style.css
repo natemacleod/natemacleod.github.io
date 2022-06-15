@@ -71,12 +71,10 @@ header {
     margin: 0 auto 20px auto;
 }
 
-#picture {
-    width: 30%;
-}
-
 #picture img {
     margin: 0 0 0 auto;
+    width: 200px;
+    max-width: 30vw;
 }
 
 #aboutflex p {
@@ -90,7 +88,7 @@ header {
 }
 
 main {
-    margin-top: 8vh;
+    margin-top: 6vh;
 }
 
 h1 {
@@ -118,20 +116,11 @@ h3 {
     display: inline-block;
 }
 
-h4 {
-    font-size: 25px;
-}
-
 #subtitle {
+    font-size: 25px;
     text-align: left;
     padding: 0 0 0 8%;
     line-height: 2;
-}
-
-h6 {
-    font-family: var(--heading-font);
-    display: inline-block;
-    color: var(--c4);
 }
 
 .proj {
@@ -192,15 +181,6 @@ p {
     font-size: 20px;
     font-weight: 300;
     padding: 5px 10px 5px 10px;
-}
-
-#email * {
-    display: inline-block;
-}
-
-#email img {
-    filter: invert(100%);
-    margin: 0 0 0 10px;
 }
 
 #gamearea {

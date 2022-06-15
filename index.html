@@ -34,12 +34,13 @@
         <img load="lazy" id="diag" src="./files/diagonal.png" width="100%" height="50vh">
     </header>
     <main>
-        <div id="about">
+        <section id="about">
             <h2>About Me</h2>
             <div id="aboutflex">
                 <div id="picture">
-                <img load="lazy" src="./files/me.jpg">
+                    <img load="lazy" src="./files/placeholder.png">
                 </div>
+                <img src="./files/divider.png" load="lazy" style="margin: 0 20px;">
                 <p>
                     Hello! I'm Nate MacLeod, a second-year Computer Science student at the University of Waterloo in
                     Waterloo, Ontario, Canada.<br>
@@ -48,7 +49,7 @@
                 </p>
             </div>
             <h2>My Skills</h2>
-            <div id="skills">
+            <section id="skills">
                 <div class="skillShell">
                     <div class="skill">
                         <img load="lazy" src="./files/skills/c.png" style="width: 53.44px">
@@ -123,6 +124,12 @@
                 </div>
                 <div class="skillShell">
                     <div class="skill">
+                        <img load="lazy" src="./files/skills/mongo.png" style="width: 27.82px">
+                        <p>MongoDB</p>
+                    </div>
+                </div>
+                <div class="skillShell">
+                    <div class="skill">
                         <img load="lazy" src="./files/skills/bash.png">
                         <p>Bash</p>
                     </div>
@@ -139,31 +146,28 @@
                         <p>Windows</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="projects">
+            </section>
+        </section>
+        <section id="projects">
             <h2>My Projects</h2>
             <br>
             <div class="proj">
                 <div class="project-left">
-                    <img load="lazy" src="./files/skills/bash.png">
+                    <img load="lazy" src="./files/watlink-logo.jpg">
                 </div>
                 <div class="project-right">
-                    <h3>Template</h3>
-                    <a href="#projects">natemacleod.github.io/exampleURL</a>
-                    <p>Description <br>
-                        Line 2 <br>
-                        Line 3
-                    </p>
+                    <h3>WatLink</h3>
+                    <a href="#projects">watlink.me</a>
+                    <p>A site that allows UWaterloo students to find groups for studying, social events, or anything else.</p>
                     <div class="stack">
-                        <p>Languages</p>
-                        <a href="https://github.com/natemacleod" target="_blank"><img load="lazy" src="./files/icons/github.svg"></a>
+                        <p>Vue, JavaScript, CSS, Firebase</p>
+                        <a href="https://github.com/natemacleod/watlink" target="_blank"><img load="lazy" src="./files/icons/github.svg"></a>
                     </div>
                 </div>
             </div>
             <div class="proj">
                 <div class="project-left">
-                    <img load="lazy" src="./files/skills/bash.png">
+                    <img load="lazy" src="./files/placeholder.png">
                 </div>
                 <div class="project-right">
                     <h3>Snake</h3>
@@ -176,8 +180,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="contact">
+            <div class="proj">
+                <div class="project-left">
+                    <img load="lazy" src="./files/discord-logo.png">
+                </div>
+                <div class="project-right">
+                    <h3>To-Do Bot</h3>
+                    <a href="https://github.com/natemacleod/to-do-bot">github.com/natemacleod/to-do-bot</a>
+                    <p>A Discord bot that uses the Discord API to allow server members to work together to complete tasks on a to-do list.
+                    </p>
+                    <div class="stack">
+                        <p>Python, MongoDB</p>
+                        <a href="https://github.com/natemacleod/to-do-bot" target="_blank"><img load="lazy" src="./files/icons/github.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
             <h2>Contact Me</h2>
             <div id="methods">
                 <a class="contactShell" href="mailto:nate.macleod@uwaterloo.ca">
@@ -208,7 +227,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 
