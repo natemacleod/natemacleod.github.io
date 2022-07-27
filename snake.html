@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Nate MacLeod's Website</title>
-        <link href="./style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-        <script async src="./js/snake.js"></script>
-    </head>
-    <body>
-        <nav>
-            <a href="./index.html" id="home">Home</a>
+
+<head>
+    <title>Nate MacLeod's Website</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script async src="./js/snake.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="#" id="hm"><img src="./files/icons/list.svg" /></a>
+        <div id="desktopMenu">
+            <a href="./index.html">Home</a>
             <a href="./index.html#about">About</a>
             <a href="./index.html#projects">My Projects</a>
             <a href="./index.html#contact">Contact</a>
             <a href="./files/resume.pdf" target="_blank">Resume</a>
-        </nav>
-        <main>
-            <h2>Snake</h2>
-            <p>Use the arrow keys or W/A/S/D to change direction. Press Escape to quit.</p> 
-            <noscript>Sorry, JavaScript must be enabled to play Snake.</noscript>
-            <canvas id="gamearea" width="800" height="840">
-                Sorry, this device/browser is not supported.
-            </canvas>
-        </main>
-    </body>
+        </div>
+        <div id="desktopMenuReplacement"></div>
+        <div id="mobileMenu" class="inactive">
+            <a href="./index.html">Home</a>
+            <a href="./index.html#about">About</a>
+            <a href="./index.html#projects">My Projects</a>
+            <a href="./index.html#contact">Contact</a>
+            <a href="./files/resume.pdf" target="_blank">Resume</a>
+        </div>
+    </nav>
+    <main>
+        <h2>Snake</h2>
+        <p>Use the arrow keys or W/A/S/D to change direction. Press Escape to quit.</p>
+        <noscript>Sorry, JavaScript must be enabled to play Snake.</noscript>
+        <canvas id="gamearea" width="800" height="840">
+            Sorry, this device/browser is not supported.
+        </canvas>
+    </main>
+    <script src="./js/responsiveMenu.js"></script>
+</body>
+
 </html>
