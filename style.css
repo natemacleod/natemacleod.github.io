@@ -40,9 +40,53 @@ a {
     font-size: 18px;
     display: inline-block;
     padding: 10px 15px;
-    border-radius: 15px;
     margin: 20px 10px;
     text-decoration: none;
+}
+
+#hm {
+    float: left;
+    margin: 0 10px 0 3%;
+    height: 63px;
+}
+
+#hm img {
+    filter: invert(100%);
+    height: 32px;
+    position: absolute;
+    transform: translateY(50%);
+}
+
+#desktopMenu {
+    display: none;
+}
+
+#desktopMenuReplacement {
+    height: 83px; 
+}
+
+#mobileMenu {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.inactive {
+    display: none !important;
+}
+
+@media all and (min-width: 660px) {
+    #desktopMenu {
+        display: block;
+    }
+
+    #hm {
+        display: none;
+    }
+
+    #desktopMenuReplacement {
+        display: none;
+    }
 }
 
 #mainHeader {
@@ -53,18 +97,44 @@ a {
     vertical-align: middle;
     background-color: var(--c1);
     color: var(--c7);
+    justify-content: center;
+}
+
+#header-sidebar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sidebar {
+    display: flex;
+    flex-flow: column;
+}
+
+#sidebar a {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+#sidebar img {
+    box-sizing: content-box;
+    padding: 20px;
 }
 
 #aboutflex {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     margin: 0 20px 20px 20px;
     padding: 10px;
-    width: 60%;
-    min-width: 600px;
     max-width: 900px;
     margin: 0 auto 20px auto;
+    justify-content: center;
+}
+
+#picture {
+    margin: 0 20px 10px 20px;
+    min-width: 150px;
 }
 
 #picture img {
@@ -76,11 +146,7 @@ a {
 #aboutflex p {
     width: 70%;
     padding: 0;
-}
-
-#home {
-    float: left;
-    margin: 20px 10px 20px 3%;
+    min-width: 300px;
 }
 
 main {
@@ -90,11 +156,10 @@ main {
 h1 {
     text-align: left;
     font-family: var(--heading-font);
-    font-size: 100px;
+    font-size: min(100px, 10vw);
     font-weight: 800;
     letter-spacing: 2px;
     padding: 10px 10px 10px 8%;
-    margin: 10% 0 0 0;
 }
 
 h2 {
@@ -113,22 +178,22 @@ h3 {
 }
 
 #subtitle {
-    font-size: 25px;
+    font-size: min(25px, 4vw);
     text-align: left;
     padding: 0 0 0 8%;
     line-height: 2;
+    margin: 0 5vw 9vh 0;
 }
 
 .proj {
     display: flex;
+    flex-flow: row wrap;
     margin: 40px auto;
-    min-width: 600px;
     max-width: 900px;
-    height: 300px;
+    justify-content: center;
 }
 
 .project-left {
-    width: 49%;
     margin: 0 1% 0 0;
 }
 
@@ -139,6 +204,7 @@ h3 {
 
 .project-right {
     width: 49%;
+    min-width: min(90vw, 300px);
     margin: 0 0 0 1%;
     text-align: left;
 }
@@ -184,31 +250,15 @@ p {
     margin: 20px 0 60px 0;
 }
 
-#sidebar {
-    display: flex;
-    flex-flow: column;
-    position: absolute;
-    top: 40%;
-    right: 0%;
-}
-
-#sidebar a {
-    padding: 0;
-    margin: 0;
-    font-size: 0;
-}
-
-#sidebar img {
-    box-sizing: content-box;
-    padding: 20px;
-}
-
 #skills {
     display: flex;
     flex-flow: row wrap;
     width: 85%;
     min-width: 320px;
     max-width: 1000px;
+    max-height: 480px;
+    overflow-x: hidden;
+    overflow-y: auto;
     margin: 10px auto;
     justify-content: center;
 }

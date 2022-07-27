@@ -13,25 +13,36 @@
 
 <body>
     <nav>
-        <a href="#" id="home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">My Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="./files/resume.pdf" target="_blank" style="margin-right: 3%">Resume</a>
+        <a href="#" id="hm"><img src="./files/icons/list.svg" /></a>
+        <div id="desktopMenu">
+            <a href="#about" class="link">About</a>
+            <a href="#projects" class="link">My Projects</a>
+            <a href="#contact" class="link">Contact</a>
+            <a href="./files/resume.pdf" target="_blank" style="margin-right: 3%" class="link">Resume</a>
+        </div>
+        <div id="desktopMenuReplacement"></div>
+        <div id="mobileMenu" class="inactive">
+            <a href="#about" class="link">About</a>
+            <a href="#projects" class="link">My Projects</a>
+            <a href="#contact" class="link">Contact</a>
+            <a href="./files/resume.pdf" target="_blank" class="link">Resume</a>
+        </div>
     </nav>
     <header>
         <div id="mainHeader">
-            <h1>Hi. <br>I'm Nate MacLeod.</h1>
+            <div id="header-sidebar">
+                <h1>Hi. <br>I'm Nate MacLeod.</h1>
+                <div id="sidebar">
+                    <a href="mailto:nate.macleod@uwaterloo.ca"><img load="lazy" src="./files/icons/envelope.svg"
+                            width="45px" height="45px" style="background-color: #efefef;"></a>
+                    <a href="#"><img load="lazy" src="./files/icons/linkedin.svg" width="45px" height="45px"
+                            style="background-color: dodgerblue;"></a>
+                    <a href="https://github.com/natemacleod" target="_blank"><img load="lazy" src="./files/icons/github.svg"
+                            width="45px" height="45px" style="background-color: #e9d9d1; filter: invert(100%);"></a>
+                </div>
+            </div>
             <h4 id="subtitle">I'm an aspiring developer looking for exciting opportunities in the CS industry. <br>
                 This site is under construction. Please come back later!</h4>
-            <div id="sidebar">
-                <a href="mailto:nate.macleod@uwaterloo.ca"><img load="lazy" src="./files/icons/envelope.svg"
-                        width="45px" height="45px" style="background-color: #efefef;"></a>
-                <a href="#"><img load="lazy" src="./files/icons/linkedin.svg" width="45px" height="45px"
-                        style="background-color: dodgerblue;"></a>
-                <a href="https://github.com/natemacleod" target="_blank"><img load="lazy" src="./files/icons/github.svg"
-                        width="45px" height="45px" style="background-color: #e9d9d1; filter: invert(100%);"></a>
-            </div>
         </div>
         <img load="lazy" id="diag" src="./files/diagonal.png" width="100%" height="50vh">
     </header>
@@ -42,11 +53,10 @@
                 <div id="picture">
                     <img load="lazy" src="./files/placeholder.png">
                 </div>
-                <img src="./files/divider.png" load="lazy" style="margin: 0 20px;">
                 <p>
                     Hello! I'm Nate MacLeod, a second-year Computer Science student at the University of Waterloo in
-                    Waterloo, Ontario, Canada.<br>
-                    I first learned Python in 2014, and I've been programming ever since.<br>
+                    Ontario, Canada.<br>
+                    I first learned Python in 2013, and I've been programming ever since.<br>
                     [Add more]
                 </p>
             </div>
@@ -236,6 +246,6 @@
             </div>
         </section>
     </main>
+    <script src="./js/responsiveMenu.js"></script>
 </body>
-
 </html>
