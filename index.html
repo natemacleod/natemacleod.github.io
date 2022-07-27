@@ -44,7 +44,10 @@
             <h4 id="subtitle">I'm an aspiring developer looking for exciting opportunities in the CS industry. <br>
                 This site is under construction. Please come back later!</h4>
         </div>
-        <img load="lazy" id="diag" src="./files/diagonal.png" width="100%" height="50vh">
+        <svg id="diag" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0,0 0,100 50,100" />
+            <polygon points="100,0 100,100 50,100" />
+        </svg>
     </header>
     <main>
         <section id="about">
@@ -64,13 +67,13 @@
             <section id="skills">
                 <div class="skillShell">
                     <div class="skill">
-                        <img load="lazy" src="./files/skills/c.png" style="width: 53.44px">
+                        <img load="lazy" src="./files/skills/c.png">
                         <p>C</p>
                     </div>
                 </div>
                 <div class="skillShell">
                     <div class="skill">
-                        <img load="lazy" src="./files/skills/cpp.png" style="width: 53.44px">
+                        <img load="lazy" src="./files/skills/cpp.png">
                         <p>C++</p>
                     </div>
                 </div>
@@ -94,7 +97,7 @@
                 </div>
                 <div class="skillShell">
                     <div class="skill">
-                        <img load="lazy" src="./files/skills/css.png" style="width: 42.53px;">
+                        <img load="lazy" src="./files/skills/css.png">
                         <p>CSS</p>
                     </div>
                 </div>
@@ -136,7 +139,7 @@
                 </div>
                 <div class="skillShell">
                     <div class="skill">
-                        <img load="lazy" src="./files/skills/mongo.png" style="width: 27.82px">
+                        <img load="lazy" src="./files/skills/mongo.png">
                         <p>MongoDB</p>
                     </div>
                 </div>
@@ -219,7 +222,7 @@
                 <a class="contactShell" href="mailto:nate.macleod@uwaterloo.ca">
                     <div class="method">
                         <img load="lazy" src="./files/icons/envelope.svg">
-                        <p>nate.macleod@uwaterloo.ca</p>
+                        <p id="email">nate.macleod@uwaterloo.ca</p>
                     </div>
                 </a>
                 <a class="contactShell" href="#">
