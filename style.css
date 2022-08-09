@@ -1,11 +1,6 @@
 :root {
     --c1: #1f1f1f;
-    --c2: #16262e;
-    --c3: #4d6cfa;
-    --c4: #10afaf;
-    --c5: #ec4e20;
-    --c6: #829191;
-    --c7: #efefef;
+    --c2: #efefef;
 
     --heading-font: 'IBM Plex Mono', sans-serif;
     --text-font: 'Segoe UI', Arial, sans-serif;
@@ -19,15 +14,45 @@
 html {
     font-family: 'Segoe UI', Helvetica, sans-serif;
     text-align: center;
-    background-color: var(--c7); 
+    background-color: var(--c2); 
     color: var(--c1);
+}
+
+h1 {
+    text-align: left;
+    font-family: var(--heading-font);
+    font-size: min(100px, 10vw);
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 10px 10px 10px 8%;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 25px 20px 20px 20px;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    display: inline-block;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px 10px 5px 10px;
 }
 
 nav {
     text-align: right;
     width: 100%;
     background-color: var(--c1);
-    color: var(--c7);
+    color: var(--c2);
 }
 
 nav a:hover {
@@ -36,7 +61,7 @@ nav a:hover {
 
 a {
     font-family: var(--heading-font);
-    color: var(--c7);
+    color: var(--c2);
     font-size: 18px;
     display: inline-block;
     padding: 10px 15px;
@@ -96,7 +121,7 @@ a {
     width: 100%;
     vertical-align: middle;
     background-color: var(--c1);
-    color: var(--c7);
+    color: var(--c2);
     justify-content: center;
 }
 
@@ -127,7 +152,19 @@ a {
     height: 5vh;
     width: 100%;
     background-color: var(--c1);
-    fill: var(--c7);
+    fill: var(--c2);
+}
+
+main {
+    margin-top: 6vh;
+}
+
+.subtitle {
+    font-size: min(25px, 4vw);
+    text-align: left;
+    padding: 0 0 0 8%;
+    line-height: 1.6;
+    margin-right: 5%;
 }
 
 #aboutflex {
@@ -158,40 +195,46 @@ a {
     min-width: 200px;
 }
 
-main {
-    margin-top: 6vh;
+#skills {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    min-width: min(337px, max(87vw, 257px));
+    max-width: 977px;
+    max-height: 480px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 10px auto;
+    justify-content: center;
 }
 
-h1 {
-    text-align: left;
-    font-family: var(--heading-font);
-    font-size: min(100px, 10vw);
-    font-weight: 800;
-    letter-spacing: 2px;
-    padding: 10px 10px 10px 8%;
+.twoLineSkill {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-h2 {
-    font-family: var(--heading-font);
-    font-size: 40px;
-    font-weight: 600;
-    padding: 25px 20px 20px 20px;
-    display: inline-block;
+@media all and (min-width: 747px) {
+    #skills {
+        max-height: 640px;
+    }
 }
 
-h3 {
-    font-size: 30px;
-    font-weight: 600;
-    padding: 10px;
-    display: inline-block;
+.skillShell {
+    width: min(160px, max(40vw, 120px));
+    height: min(160px, max(40vw, 120px));
 }
 
-#subtitle {
-    font-size: min(25px, 4vw);
-    text-align: left;
-    padding: 0 0 0 8%;
-    line-height: 2;
-    margin: 0 5vw 9vh 0;
+.skill {
+    margin: min(15px, 2vw);
+    padding: min(15px, 2vw);
+}
+
+.skill img {
+    height: min(60px, max(15vw, 45px));
+}
+
+.skill p {
+    font-size: min(20px, max(5vw, 15px));
 }
 
 .proj {
@@ -248,48 +291,6 @@ h3 {
     font-size: 18px;
 }
 
-p {
-    font-size: 20px;
-    font-weight: 300;
-    padding: 5px 10px 5px 10px;
-}
-
-#gamearea {
-    border: 2px solid red;
-    margin: 20px 0 60px 0;
-}
-
-#skills {
-    display: flex;
-    flex-flow: row wrap;
-    width: 90%;
-    min-width: min(337px, max(87vw, 257px));;
-    max-width: 1000px;
-    max-height: 480px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin: 10px auto;
-    justify-content: center;
-}
-
-.skillShell {
-    width: min(160px, max(40vw, 120px));
-    height: min(160px, max(40vw, 120px));
-}
-
-.skill {
-    margin: min(15px, 2vw);
-    padding: min(15px, 2vw);
-}
-
-.skill img {
-    height: min(60px, max(15vw, 45px));
-}
-
-.skill p {
-    font-size: min(20px, max(5vw, 15px));
-}
-
 #methods {
     display: flex;
     flex-flow: row wrap;
@@ -326,4 +327,9 @@ p {
 #resume {
     display: block;
     margin: 20px auto;
+}
+
+#gamearea {
+    border: 2px solid red;
+    margin: 20px 0 60px 0;
 }
