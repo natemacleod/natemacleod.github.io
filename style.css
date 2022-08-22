@@ -24,7 +24,6 @@ h1 {
     font-size: min(100px, 10vw);
     font-weight: 800;
     letter-spacing: 2px;
-    padding: 10px 10px 10px 8%;
 }
 
 h2 {
@@ -128,6 +127,22 @@ a {
 #header-sidebar {
     display: flex;
     justify-content: space-between;
+}
+
+#title {
+    display: grid;
+    padding: 10px 10px 10px 8%;
+}
+
+#size {
+    color: var(--c1);
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#tr {
+    grid-row: 1;
+    grid-column: 1;
 }
 
 #sidebar {
