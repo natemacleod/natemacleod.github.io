@@ -6,7 +6,7 @@ const type = async function (ftxt, ctxt, el) {
     ctxt = ftxt.substring(0, ctxt.length + 1)
     if (ctxt[ctxt.length - 1] === '\n') {
         ctxt = ctxt.substring(0, ctxt.length - 1) + "<br>"
-        ftxt = "Hi. <br>I'm Nate MacLeod."
+        ftxt = "Hi.  <br>I'm Nate MacLeod."
     }
     el.innerHTML = '<span class="wrap">' + ctxt + '</span>'
 
@@ -26,7 +26,7 @@ window.onload = async function () {
 
     var element = document.getElementById('tr')
     await sleep(400)
-    console.log(await type("Hi. \nI'm Nate MacLeod.", "", element))
+    console.log(await type("Hi.  \nI'm Nate MacLeod.", "", element))
     await sleep(500)
     css.innerHTML = ""
     for (let i = 0; i < 4; i++) {
