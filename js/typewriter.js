@@ -1,3 +1,5 @@
+// typewriter.js handles the animation that "types out" the main header of my site
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
