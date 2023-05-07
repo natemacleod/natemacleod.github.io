@@ -202,7 +202,6 @@ function changeDirection(e) {
     else if (e.code === "ArrowLeft" || e.code === "KeyA") st.dir = "LEFT";
     else if (e.code === "ArrowRight" || e.code === "KeyD") st.dir = "RIGHT";
     else if (e.code === "Escape") st.active = false;
-
 }
 
 // Start/restart screen for the game
