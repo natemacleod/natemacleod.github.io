@@ -214,7 +214,6 @@ main {
     width: 90%;
     min-width: min(337px, max(87vw, 257px));
     max-width: 977px;
-    max-height: 480px;
     overflow-x: hidden;
     overflow-y: auto;
     margin: 10px auto 50px auto;
@@ -226,7 +225,7 @@ main {
     margin-bottom: 0 !important;
 }
 
-@media all and (min-width: 747px) {
+@media all and (max-width: 747px) {
     #skills {
         max-height: 640px;
     }
