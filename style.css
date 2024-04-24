@@ -16,6 +16,7 @@ html {
     text-align: center;
     background-color: var(--c2); 
     color: var(--c1);
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -214,8 +215,6 @@ main {
     width: 90%;
     min-width: min(337px, max(87vw, 257px));
     max-width: 977px;
-    overflow-x: hidden;
-    overflow-y: auto;
     margin: 10px auto 50px auto;
     justify-content: center;
 }
@@ -225,9 +224,10 @@ main {
     margin-bottom: 0 !important;
 }
 
-@media all and (max-width: 747px) {
+@media all and (max-width: 905px) {
     #skills {
         max-height: 640px;
+        overflow: hidden auto;
     }
 }
 
